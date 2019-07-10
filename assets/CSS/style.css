@@ -164,7 +164,8 @@ nav a:hover{
  .btn-orange{
    color:whitesmoke;
    background-color: #BF0000;
-   border: 2px solid #BF0000;  
+   border: 2px solid #BF0000;
+   border-radius: 3px; 
 
 } 
 
@@ -173,13 +174,20 @@ nav a:hover{
     color:#ffffff; 
     background: transparent;
     border: 2px solid #ffffff;
+    border-radius: 3px;
   
 }
 
+.btn-orange:hover{
+    box-shadow: 2px 2px 2px #ffffff;
+    
+} 
 
 .btn-white:hover{
     background-color:#BF0000; 
     color: #ffffff;
+    border: none;
+    box-shadow: 2px 2px 2px #ffffff;
     
 } 
 /* end of button */
