@@ -484,27 +484,27 @@ nav a:hover{
 }
 
 .grid_item_overlay{
-    position: absolute;
-    width: 50%;
-    height: 30%;
-    text-align: center;
-    color:#ffffff;
-    top:10%;
-    left:20%;
-     padding:2rem;
-     padding-top: 30%;
-     padding-bottom: 15%;
-    background:rgba(191, 0, 0, 0.6);
-    z-index: 99;
-     /* transition: 0.3s;    */
+   
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin:auto;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 250px;
+  opacity: 0;
+  transition: .5s ease;
+  background:rgba(191, 0, 0, 0.6);
  
 }
 
-.grid_item_overlay h3{
+/* .grid_item_overlay h3{
     font-size: 20px;
     font-family: sans-serif;
+    text-align: center;
 }
-
+ */
 
  
 
