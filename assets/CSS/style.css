@@ -11,7 +11,7 @@
  header{ 
     /* background-color: #253471; */
     /* background-color: #130e3c20; */
-     position: fixed;
+    position: fixed;
     width: 100%;
    display: flex;
    justify-content: space-between;
@@ -28,27 +28,41 @@
 } 
 
 
-header .nav{
-    font-family: Comfortaa;
+header nav ul{
+    font-family: sans-serif;
     display: flex;
-    justify-content: flex-end;
+    z-index: -2;
+
    
 
 } 
 
 
-header li{
+header nav ul li{
     margin:10px;
     list-style: none;
 }
 
 
-header .nav a{
+header nav ul li a{
     text-decoration: none;
     color:white;
     font-size: 13px;
 
 } 
+header nav ul li a:hover{
+    width: 79px;
+    height: 95px;
+    text-decoration: none;
+    color:#ffffff;
+    padding-top:50px;
+    text-align: center;
+    background: #BF0000;
+    border-radius: 50%;
+}
+
+
+
 
 
 /* #home{
@@ -57,10 +71,7 @@ header .nav a{
 } */
 
 
-nav a:hover{
-    color: #BF0000;
-     
-}
+
 
 /* End of header */
 
@@ -259,7 +270,7 @@ nav a:hover{
     display: block;
     background: #BF0000;
     width: 60px;
-    height: 3px;
+    height: 2px;
     margin-top: 25px;
     margin-left: 45%;
     
@@ -430,28 +441,39 @@ nav a:hover{
     border-radius: 50%;
     
 }
-.separator:after {
-    position: absolute;
-    left:5%;
-    bottom:4px;
-    height: 2px;
-    width: 150px;
-    background: gray;
-    content:"";
-    display: inline-block;
-    margin-left: 20px;
-}
+
 .separator:before {
     position: absolute;
     right: 5%;
     bottom:4px;
-    height: 2px;
+    height: 1px;
     width: 150px;
-    background: gray;
+    background: linear-gradient(90deg, transparent, #444444);
     content:"";
     display: inline-block;
     margin-right: 20px;
 }
+
+.separator:after {
+    position: absolute;
+    left:5%;
+    bottom:4px;
+    height: 1px;
+    width: 150px;
+    background: linear-gradient(-90deg, transparent, #444444);
+    content:"";
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
 .toolbar{
     text-align: center;
     
@@ -492,6 +514,7 @@ nav a:hover{
   margin:auto;
   left: 0;
   color: #ffffff;
+  font-family: sans-serif;
   right: 0;
   height: 50%;
   width: 250px;
@@ -509,7 +532,7 @@ nav a:hover{
     display: block;
     background: #fff;
     width: 60px;
-    height: 3px;
+    height: 2px;
     margin-top:80px;
     margin-left: 25px;
 
