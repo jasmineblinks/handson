@@ -483,6 +483,7 @@ nav a:hover{
     opacity: 1;
 }
 
+
 .grid_item_overlay{
    
   position: absolute;
@@ -490,6 +491,7 @@ nav a:hover{
   bottom: 0;
   margin:auto;
   left: 0;
+  color: #ffffff;
   right: 0;
   height: 50%;
   width: 250px;
@@ -499,17 +501,32 @@ nav a:hover{
  
 }
 
-/* .grid_item_overlay h3{
-    font-size: 20px;
-    font-family: sans-serif;
-    text-align: center;
+
+
+
+.grid_item_overlay::before{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 60px;
+    height: 3px;
+    margin-top:80px;
+    margin-left: 25px;
+
 }
- */
+
+
+ .grid_item_overlay, h3{
+    padding-top: 50px;
+    margin-left: 25px;
+}
+.grid_item_overlay, p{
+    margin-left: 25px;
+}
+
+
+
+
+
 
  
-
-
-
-
-
-
