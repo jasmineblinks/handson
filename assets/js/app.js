@@ -1,12 +1,12 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if (scroll > 200) {
-          $("header").css("background" , "blue");
+        if (scroll > 300) {
+          $("header").css("background" , "rgba(13, 71, 161, 0.3)");
         }
   
         else{
-            $("header").css("background" , "rgba(0,0,0,0.05)");  	
+            $("header").css("background" , "transparent");  	
         }
     })
   })
