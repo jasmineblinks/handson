@@ -8,6 +8,8 @@
 
 
 /* header */
+
+
  header{ 
     /* background-color: #253471; */
     /* background-color: #130e3c20; */
@@ -17,6 +19,7 @@
    justify-content: space-between;
    align-items: center;
    height: 60px;
+   
    
     
 } 
@@ -33,37 +36,40 @@
 header nav ul{
     font-family: sans-serif;
     display: flex;
-    z-index: -2;
+    
 
    
 
 } 
 
 
-header nav ul li{
+header nav  ul li{
     margin:10px;
     list-style: none;
 }
 
 
-header nav ul li a{
-    text-decoration: none;
-    color:white;
-    font-size: 13px;
 
-} 
-header nav ul li a:hover{
-    width: 79px;
-    height: 95px;
+
+
+ header nav ul li a{
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 13px;
+}
+ header nav ul li a:hover{
+    width: 72px;
+    height: 40px;
     text-decoration: none;
     color:#ffffff;
-    padding-top:50px;
+    padding-top:20px;
     text-align: center;
     background: #BF0000;
-    border-radius: 50%;
-}
-
-
+    border-radius: 0px 0px 35px 35px;
+    }
+    
 
 
 
@@ -91,6 +97,7 @@ header nav ul li a:hover{
      background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    pointer-events: none;
 
    
 } 
@@ -548,6 +555,160 @@ header nav ul li a:hover{
 .grid_item_overlay, p{
     margin-left: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media query */
+
+
+
+
+
+
+@media screen and (max-width: 360px) {
+    * {
+  
+        box-sizing: border-box;
+        
+       }
+       
+       header{ 
+    
+        position: none;
+       display:block;
+       align-items: center;
+       
+       
+        
+    } 
+
+    header .logo-name{
+        font-size: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+
+
+    header nav ul li a {
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+       }
+        a:hover {
+          opacity: 0.8; }
+      
+      /* nav toggle */
+      .nav-toggle {  
+        cursor: pointer;
+        height: 30px;
+        right: 2rem;
+        position: fixed;
+        top: 2rem;
+        width: 35px;
+        z-index: 99;
+      
+      
+       }
+        .nav-toggle:hover {
+          opacity: 0.8;
+       }
+         .nav-toggle .nav-toggle-bar,
+        .nav-toggle .nav-toggle-bar::after,
+        .nav-toggle .nav-toggle-bar::before {
+          position: absolute;
+          top: 20%;    
+          transform: translateY(-50%);    
+          transition: all 0.5s ease;
+          background: white;
+          content: '';
+          height: 0.4rem;
+          width: 100%; }
+        .nav-toggle .nav-toggle-bar {
+          margin-top: 0; }
+        .nav-toggle .nav-toggle-bar::after {
+          margin-top: 0.8rem; }
+        .nav-toggle .nav-toggle-bar::before {
+          margin-top: -0.8rem; }
+        .nav-toggle.expanded .nav-toggle-bar {
+          background: transparent; }
+        .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+          background: white;
+          margin-top: 0; }
+        .nav-toggle.expanded .nav-toggle-bar::after {    
+          transform: rotate(45deg);
+       }
+        .nav-toggle.expanded .nav-toggle-bar::before {
+              transform: rotate(-45deg); }
+       */
+      /* nav */
+     header .nav {
+         transition: left 0.5s ease;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+        height: 100vh;
+        left: -20rem;
+        padding: 6rem 2rem 2rem 2rem;
+        position: fixed;
+        top: 0;
+        width: 10rem;
+        z-index: 1;
+     }
+     
+        .nav.expanded {
+          left: 0;
+         }
+        header nav ul{
+            position: absolute;
+          top: 10%;
+          display: block;
+          list-style: none;
+          margin: 10px;
+          padding: 0;
+         }
+
+          header nav ul li a:hover{
+              display: none;
+          }
+        
+          .banner{ 
+            width: 100%;
+            height: 600px;
+            background: url("../img/overlay.png");
+            background-size: cover;
+             /* background-attachment: fixed;  */
+             background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+        
+        
+           
+        } 
+    
+
+}
+
+
+
+
+
 
 
 
