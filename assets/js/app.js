@@ -18,21 +18,30 @@ $(document).ready(function(){
 
   // hamburger menu
 
-  (function() {
+//   (function() {
 
-    var hamburger = {
-        navToggle: document.querySelector('.nav-toggle'),
-        nav: document.querySelector('nav'),
+//     var hamburger = {
+//         navToggle: document.querySelector('.nav-toggle'),
+//         nav: document.querySelector('nav'),
     
-        doToggle: function(e) {
-            e.preventDefault();
-            this.navToggle.classList.toggle('expanded');
-            this.nav.classList.toggle('expanded');
-        }
-    };
+//         doToggle: function(e) {
+//             e.preventDefault();
+//             this.navToggle.classList.toggle('expanded');
+//             this.nav.classList.toggle('expanded');
+//         }
+//     };
     
-    hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+//     hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
     
-    }());
+//     }());
     
     
+
+function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

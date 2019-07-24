@@ -1,7 +1,14 @@
  *{
-    margin: 0;
-    padding: 0;
-    
+     margin: 0;
+     padding: 0;
+ }
+
+
+ body{
+
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
     
 
 } 
@@ -44,7 +51,7 @@ header nav ul{
 
 
 header nav  ul li{
-    margin:10px;
+    margin:8px;
     list-style: none;
 }
 
@@ -60,17 +67,19 @@ header nav  ul li{
     font-size: 13px;
 }
  header nav ul li a:hover{
-    width: 72px;
-    height: 40px;
+    width: 65px;
+    /* height: 20px; */
     text-decoration: none;
-    color:#ffffff;
-    padding-top:20px;
+    color:#fff;
+    /* padding-top:20px; */
     text-align: center;
     background: #BF0000;
     border-radius: 0px 0px 35px 35px;
     }
     
-
+.icon{
+    display:none;
+}
 
 
 /* #home{
@@ -98,6 +107,7 @@ header nav  ul li{
     background-repeat: no-repeat;
     text-align: center;
     pointer-events: none;
+    
 
    
 } 
@@ -215,7 +225,7 @@ header nav  ul li{
 .banner .arrow{
     position: absolute;
     left: 48%;
-    bottom: -60%;
+    bottom: -57%;
     color: #BF0000;
     background: white;
     padding: 10px;
@@ -373,19 +383,19 @@ header nav  ul li{
 
 .single{
    background-color: rgb(0, 0, 0,0.9);
-   padding-top: 150px;
+   padding-top: 120px;
 }
 
 .service .single_service{
     display: flex;
-    margin-right: 150px;
+    margin-right: 95px;
 }
 .our-service{
     font-size: 30px;
+    padding-bottom: 20px;
     font-family: sans-serif;
     text-align: right;
-    margin-right:200px;
-    
+    margin-right:95px;  
 
 
      color: #ffffff; 
@@ -393,12 +403,15 @@ header nav  ul li{
 .service .container-fluid h4{
     font-size: 20px;
     font-family: comfortaa;
-    margin-left:300px; 
+    margin-left:95px; 
     color: #BF0000;
-    text-align: right;
-    
+    text-align: right;    
 
 
+}
+
+.sev-img{
+    width:650px;
 }
 
 .service .fas{
@@ -408,7 +421,7 @@ header nav  ul li{
     border: 5px solid grey;
     border-radius: 50px;
     font-size: 38px;
-    transform: translateX(190px)
+    transform: translateX(135px)
     
 }
 
@@ -416,8 +429,8 @@ header nav  ul li{
     color:#ffffff;
     font-size: 13px;
     font-family: sans-serif;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left:45px;
+    margin-right: 45px;
     line-height: 30px;
 }
 
@@ -581,297 +594,43 @@ header nav  ul li{
 
 
 @media screen and (max-width: 360px) {
-    * {
-  
-        box-sizing: border-box;
-        
-       }
-       
-       header{ 
     
-        position: none;
-       display:block;
-       align-items: center;
-       
-       
-        
-    } 
+    .topnav {
+        overflow: hidden;
+        position: relative;
 
-    header .logo-name{
-        font-size: 30px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-
-
-
-    header nav ul li a {
-        color: #fff;
-        cursor: pointer;
-        text-decoration: none;
-       }
-        a:hover {
-          opacity: 0.8; }
+      }
       
-      /* nav toggle */
-     .nav-toggle {  
-        cursor: pointer;
-        height: 40px;
-        right: 2rem;
-        position: fixed;
-        top: 2rem;
-        width: 45px;
-        z-index: 99;
+      .topnav nav {
+        display: none;
+      }
       
-      
-       }
-        .nav-toggle:hover {
-          opacity: 0.8;
-       }
-         .nav-toggle .nav-toggle-bar,
-        .nav-toggle .nav-toggle-bar::after,
-        .nav-toggle .nav-toggle-bar::before {
-          position: absolute;
-          top: 20%;    
-          transform: translateY(-50%);    
-          transition: all 0.5s ease;
-          background: white;
-          content: '';
-          height: 0.4rem;
-          width: 100%; }
-        .nav-toggle .nav-toggle-bar {
-          margin-top: 0; }
-        .nav-toggle .nav-toggle-bar::after {
-          margin-top: 0.8rem; }
-        .nav-toggle .nav-toggle-bar::before {
-          margin-top: -0.8rem; }
-        .nav-toggle.expanded .nav-toggle-bar {
-          background: transparent; }
-        .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
-          background: white;
-          margin-top: 0; }
-        .nav-toggle.expanded .nav-toggle-bar::after {    
-          transform: rotate(45deg);
-       }
-        .nav-toggle.expanded .nav-toggle-bar::before {
-              transform: rotate(-45deg); }
-       */
-      /* nav */
-     header .nav {
-         transition: left 0.5s ease;
-        background: transparent;
+      .topnav a {
         color: white;
-        cursor: pointer;
-        font-size: 2rem;
-        height: 100vh;
-        left: -20rem;
-        padding: 6rem 2rem 2rem 2rem;
-        position: fixed;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .topnav a.icon {
+        background:#BF0000;
+        margin: 10px;
+        border-radius: 4px;        
+        display: block;
+        /* position: absolute; */
+        right: 0;
         top: 0;
-        width: 10rem;
-        z-index: 1;
-     }
-     
-        .nav.expanded {
-          left: 0;
-         }
-        header nav ul{
-            position: absolute;
-          top: 10%;
-          display: block;
-          list-style: none;
-          margin: 10px;
-          padding: 0;
-         }
-
-          header nav ul li a:hover{
-              display: none;
-          }
-        
-          .banner{ 
-            width: 100%;
-            height: 600px;
-            background: url("../img/overlay.png");
-            background-size: cover;
-             /* background-attachment: fixed;  */
-             background-position: center;
-            background-repeat: no-repeat;
-            text-align: center;
-        
-        
-           
-        } 
-
-
-
-
-
-        .banner-title{ 
-            text-align: center;
-            color: white;
-           font-size: 19px;
-           z-index: 99;
-           position: relative;
-           padding-top: 300px; 
-       }
-       
-       
-       
-       .banner-text{
-           text-align: center;
-            color:white;
-           font-size: 8px;
-           font-family: Comfortaa;
-           z-index: 100;
-           padding-top:10px;
-           line-height: 30px;       
-           
-       } 
-       
-       
-        .banner-header{ 
-            text-align: center; 
-            font-family:sans-serif;
-           font-size: 40px;
-           color: whitesmoke;
-           z-index: 2;
-           position: relative;
-        
-       }
-       
-       /* end of text on background-image */
-       
-       
-       /* buttons */
-        .banner .container{ 
-            display: flex;
-           align-items: center;
-           justify-content: center;
-       
-       }  
-       
-       
-       
-       
-        .btn {
-            z-index: 2;
-            font-size: 13px;
-           width: 200px;
-           height: 40px;
-           font-family: sans-serif;
-            margin: 5px; 
-            padding: 5px; 
-       } 
-       
-       
-       
-        .btn-orange{
-          color:whitesmoke;
-          background-color: #BF0000;
-          border: 2px solid #BF0000;
-          border-radius: 3px; 
-       
-       } 
-       
-       
-       .btn-white{
-           color:#ffffff; 
-           background: transparent;
-           border: 2px solid #ffffff;
-           border-radius: 3px;
-         
-       }
-       
-       .btn-orange:hover{
-           box-shadow: 2px 2px 2px #ffffff;
-           
-       } 
-       
-       .btn-white:hover{
-           background-color:#BF0000; 
-           color: #ffffff;
-           border: none;
-           box-shadow: 2px 2px 2px #ffffff;
-           
-       } 
-       /* end of button */
-       
-       .banner .arrow{
-           position: absolute;
-           left: 48%;
-           bottom: -60%;
-           color: #BF0000;
-           background: white;
-           padding: 10px;
-           border: 1px solid white;
-           border-radius: 50%;
-           font-size: 30px;
-       }
-       
-       /* End of homepage */
-       
-       
-       
-       /* feature section */
-       .feature .container{
-           display:flex;
-           justify-content: space-between;
-           text-align: center;
-           margin: 3px; 
-           width: 100%;
-           height: 400px;
-           padding-top: 150px;
-           
-       
-       }
-       
-       
-       .far{
-           color: #BF0000;
-           border: 1px solid lightgray;
-           padding: 30px;	
-       }
-       
-       
-       
-       
-       .far:hover{
-           border-color: #fb221e;
-           transform:rotate(30deg);
-       }
-       
-       
-       .sleek{
-           color: gray;
-           font-size: 15px;
-           font-family: comfortaa;
-           text-transform: uppercase;
-           
-           
-       
-           
-       }
-       
-       
-       .sleek:hover
-       .sleek:focus{
-           color:#BF0000; 
-       }
-       
-       .sleek::after{
-           content: "";
-           display: block;
-           background: #BF0000;
-           width: 60px;
-           height: 2px;
-           margin-top: 25px;
-           margin-left: 45%;
-           
-           
-       
-       }
-    
-
+      }
+      
+       .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      } 
+      
+      .logo-name{
+        padding-left: 10px;
+              }
 }
 
 
