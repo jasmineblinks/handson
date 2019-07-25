@@ -818,9 +818,8 @@ header   #mynav li{
 
 
 .history .container{
-    display: grid;
-    height: 700px;
-    /* padding-top: 300px; */
+    display: block;
+    padding-top: 500px;
 
 
 }
@@ -829,9 +828,32 @@ header   #mynav li{
 .history img{
     width: 300px;
     height: 300px;
-    padding-top: 400px;
+   padding-left: 35px;
     margin: auto;
     
+}
+
+.our-history{
+    
+    font-size: 17px;
+    color: #808080;
+    font-weight: 900;
+    font-family: sans-serif;
+    padding-top: 25px;
+    text-align: center;
+     
+    
+}
+
+.session p{
+    color: #808080;
+    padding-top:5px;
+    text-align: justify;
+    /* padding-right: 50px; */
+    padding-bottom: 30px;
+    padding-left:35px;
+    line-height: 25px;
+    font-size: 12px;
 }
        
 }
