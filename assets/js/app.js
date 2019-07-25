@@ -20,7 +20,7 @@ $(document).ready(function(){
     
 
 function myFunction() {
-    var x = document.getElementById("nav");
+    var x = document.getElementById("thenav");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
