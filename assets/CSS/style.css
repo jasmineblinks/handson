@@ -230,7 +230,7 @@ header   #mynav li{
 .banner .arrow{
     position: absolute;
     left: 48%;
-    bottom: -70%;
+    bottom: -57%;
     color: #BF0000;
     background: white;
     padding: 10px;
@@ -751,6 +751,67 @@ header   #mynav li{
     border-radius: 50%;
     font-size: 30px;
 }
+
+.feature .container{
+    display: grid;
+    text-align: center;
+    margin: 3px; 
+    width: 100%;
+    height: 400px;
+    padding-top: 150px;
+    
+
+}
+
+.far{
+    color: #BF0000;
+    border: 1px solid lightgray;
+    padding: 25px;	
+}
+
+
+
+.sleek{
+    color:#808080;
+    font-size: 12px;
+    font-family: comfortaa;
+    text-transform: uppercase;
+    
+    
+
+    
+}
+
+
+.sleek::after{
+    content: "";
+    display: block;
+    background: #BF0000;
+    width: 45px;
+    height: 2px;
+    margin-top: 25px;
+    margin-left: 45%;
+    
+    
+
+}
+
+
+
+.feature p{
+    color: gray;
+    padding-top:3px;
+    font-size: 10px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    padding-left:50px;
+    line-height: 30px;
+}
+
+
+
+
+
        
 }
 
