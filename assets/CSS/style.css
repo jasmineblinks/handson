@@ -740,6 +740,17 @@ header   #mynav li{
     
 } 
 
+.banner .arrow{
+    position: absolute;
+    left: 47%;
+    bottom: -35%;
+    color: #BF0000;
+    background: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 30px;
+}
        
 }
 
