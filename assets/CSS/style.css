@@ -769,6 +769,10 @@ header   #mynav li{
     padding: 25px;	
 }
 
+.far:hover{
+    border-color: #fb221e;
+    transform:rotate(30deg);
+}
 
 
 .sleek{
@@ -782,6 +786,10 @@ header   #mynav li{
     
 }
 
+.sleek:hover
+.sleek:focus{
+    color:#BF0000; 
+}
 
 .sleek::after{
     content: "";
@@ -809,9 +817,22 @@ header   #mynav li{
 }
 
 
+.history .container{
+    display: grid;
+    height: 700px;
+    /* padding-top: 300px; */
 
 
+}
 
+
+.history img{
+    width: 300px;
+    height: 300px;
+    padding-top: 400px;
+    margin: auto;
+    
+}
        
 }
 
