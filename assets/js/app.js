@@ -19,11 +19,20 @@ $(document).ready(function(){
   
     
 
-function myFunction() {
-    var x = document.getElementById("thenav");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+// function myFunction() {
+//     var x = document.getElementById("thenav");
+//     if (x.style.display === "block") {
+//       x.style.display = "none";
+//     } else {
+//       x.style.display = "block";
+//     }
+//   }
+  const burger = () => {
+    var q = document.getElementById("thenav");
+    if (q.style.display === "block") {
+      q.style.display = "none";
     } else {
-      x.style.display = "block";
+      q.style.display = "block";
     }
   }
+ 
