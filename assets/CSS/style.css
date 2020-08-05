@@ -70,16 +70,17 @@ header   #mynav li{
     text-decoration: none;
     margin-left: 10px;
     font-size: 13px;
+    border-radius: 0px 0px 35px 35px;
+    padding: 9px 15px 9px 15px;
 }
  header #mynav li a:hover{
-    width: 65px;
-    /* height: 20px; */
+    
     text-decoration: none;
     color:#fff;
-    /* padding-top:20px; */
+
     text-align: center;
     background: #BF0000;
-    border-radius: 0px 0px 35px 35px;
+    
     }
     
 .icon{
